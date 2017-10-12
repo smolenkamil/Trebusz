@@ -4,5 +4,7 @@
     <string name="search_frag">Hello blank fragment from search</string>
     <string name="timetable_frag">Hello blank fragment from timetable</string>
     <string name="fragment_authors_version_txt">Aktualna wersja aplikacji: </string>
+    <string name="fragment_authors_version_number">0.1 </string>
+    <string name="fragment_authors_authors">Kamil Smoleń and Sebastian Migacz </string>
 
 </resources>
