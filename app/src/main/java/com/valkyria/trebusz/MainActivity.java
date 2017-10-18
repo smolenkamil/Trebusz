@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        restoreDataSP();
+        
         Intent first_setup = new Intent(this,FirstSetupActivity.class);
         startActivity(first_setup);
 
@@ -35,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+    }
+
+    private void restoreDataSP() {
     }
 
 
