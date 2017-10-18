@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grupa_arr">
+        <item>KrDZIs2011Io</item>
+        <item>KrDZIs3011Io</item>
+        <item>KrDZIs3012Io</item>
+        <item>KrDZIs3013Io</item>
+        <item>KrDZIs3014Io</item>
+        <item>KrDZIs3015Io</item>
+        <item>KrDZIs3016Io</item>
+    </string-array>
+
+</resources>

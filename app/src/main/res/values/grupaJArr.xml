@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grupa_j_arr">
+        <item>Is-521B202</item>
+        <item>Is-531B102</item>
+        <item>Is-651A212</item>
+        <item>Is-881A102</item>
+        <item>Is-201B232</item>
+    </string-array>
+
+</resources>
