@@ -12,6 +12,7 @@ public class FirstSetupActivity extends AppCompatActivity {
 
     Spinner spinWczyt;
     ArrayAdapter<CharSequence> arrayWczyt;
+
     SharedPreferences dataSP;
     SharedPreferences.Editor editorDataSP;
 
@@ -50,7 +51,7 @@ public class FirstSetupActivity extends AppCompatActivity {
     private void saveDataSP() {
         dataSP = getSharedPreferences("Kwestionariusz",MODE_PRIVATE);
         editorDataSP = dataSP.edit();
-        editorDataSP.putString("saved","yes");
+        editorDataSP.putBoolean("saved",true);
         spinWczyt = (Spinner) findViewById(R.id.wydzialspin);
         editorDataSP.putString("wydzial",spinWczyt.getSelectedItem().toString());
         spinWczyt = (Spinner) findViewById(R.id.kierunekspin);
