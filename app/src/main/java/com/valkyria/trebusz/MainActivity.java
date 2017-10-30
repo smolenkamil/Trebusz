@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        numberOfTabs = 3;
+        numberOfTabs = 4;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     return TimetableFragment.newInstance();
                 case 2:
                     return AuthorsFragment.newInstance();
+                case 3:
+                    return DatabaseTestFragment.newInstance();
                 default: return null;
             }
         }
