@@ -22,7 +22,12 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private int numberOfTabs;
     SharedPreferences dataSP;
-    boolean isConf;
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.recreate();
+    }
 
     // kaprawy borsuk podgryza pędy młodej sosny
     @Override
