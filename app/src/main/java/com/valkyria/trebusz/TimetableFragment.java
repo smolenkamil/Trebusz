@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-
 public class TimetableFragment extends Fragment {
 
     SharedPreferences dataSP;
@@ -37,12 +36,23 @@ public class TimetableFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_timetable, container, false);
 
-        dataSP = this.getActivity().getSharedPreferences("Kwestionariusz", Context.MODE_PRIVATE);
-        groupNumber = dataSP.getString("grupa", "Restart App");
-        TextView txt = (TextView) v.findViewById(R.id.group_number);
-        txt.setText(groupNumber);
+        getGroupNumber(v);
+
+        setFont(v);
+
+        PageDownloader page = new PageDownloader(v);
+        page.execute();
 
 
+
+
+        return v;
+    }
+
+
+
+
+    private void setFont(View v) {
         TextView title = (TextView) v.findViewById(R.id.timetable_title);
         TextView group_number = (TextView) v.findViewById(R.id.group_number);
 
@@ -50,8 +60,13 @@ public class TimetableFragment extends Fragment {
 
         group_number.setTypeface(font);
         title.setTypeface(font);
+    }
 
-        return v;
+    private void getGroupNumber(View v) {
+        dataSP = this.getActivity().getSharedPreferences("Kwestionariusz", Context.MODE_PRIVATE);
+        groupNumber = dataSP.getString("grupa", "Restart App");
+        TextView txt = (TextView) v.findViewById(R.id.group_number);
+        txt.setText(groupNumber);
     }
 
 }

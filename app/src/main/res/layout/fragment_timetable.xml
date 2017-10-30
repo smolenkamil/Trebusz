@@ -32,6 +32,7 @@
             android:textSize="20sp" />
 
     <View
+        android:id="@+id/separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/group_number"
@@ -39,10 +40,18 @@
         android:background="@color/colorSecondary" />
 
     <LinearLayout
+        android:layout_below="@id/separator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <!--TODO: Dynamiczny plan-->
+
+        <TextView
+            android:id="@+id/test_temporary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
     </LinearLayout>
 
