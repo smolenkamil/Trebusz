@@ -47,7 +47,7 @@ public class DatabaseTestFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initListView();
-        initButtonsOnClickListeners();
+        //initButtonsOnClickListeners();
     }
 
     @Override
@@ -57,11 +57,11 @@ public class DatabaseTestFragment extends Fragment {
     }
 
     private void initListView() {
-        fillListViewData();
-        initListViewOnItemClick();
+        // fillListViewData();
+        // initListViewOnItemClick();
     }
 
-    private void fillListViewData() {
+   /* private void fillListViewData() {
         TrebuszDatabaseAdapter = new TrebuszDatabaseAdapter(getApplicationContext());
         TrebuszDatabaseAdapter.open();
         getAllTasks();
@@ -100,7 +100,7 @@ public class DatabaseTestFragment extends Fragment {
         if (todoDbAdapter != null)
             todoDbAdapter.close();
         super.onDestroy();
-    }
+    } */
 
 
 }
