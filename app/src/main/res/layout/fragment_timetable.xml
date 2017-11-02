@@ -40,17 +40,14 @@
         android:background="@color/colorSecondary" />
 
     <LinearLayout
+        android:id="@+id/timetableLayout"
         android:layout_below="@id/separator"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <!--TODO: Dynamiczny plan-->
 
-        <TextView
-            android:id="@+id/test_temporary"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
 
     </LinearLayout>
