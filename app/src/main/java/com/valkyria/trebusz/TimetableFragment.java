@@ -40,9 +40,11 @@ public class TimetableFragment extends Fragment {
 
         setFont(v);
 
-        PageDownloader page = new PageDownloader(v);
-        page.execute();
+//        PageDownloader page = new PageDownloader(v);
+//        page.execute();
 
+        ScheduleDownloader page = new ScheduleDownloader(v);
+        page.execute();
 
 
 
